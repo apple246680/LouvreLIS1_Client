@@ -1,0 +1,40 @@
+C:\Users\USER\Desktop\53全國賽試題(09商務軟體設計)\02 Software Design 1\LouvreLIS_Client\bin\Debug\LouvreLIS_Client.exe.config
+C:\Users\USER\Desktop\53全國賽試題(09商務軟體設計)\02 Software Design 1\LouvreLIS_Client\bin\Debug\LouvreLIS_Client.exe
+C:\Users\USER\Desktop\53全國賽試題(09商務軟體設計)\02 Software Design 1\LouvreLIS_Client\bin\Debug\LouvreLIS_Client.pdb
+C:\Users\USER\Desktop\53全國賽試題(09商務軟體設計)\02 Software Design 1\LouvreLIS_Client\bin\Debug\EntityFramework.dll
+C:\Users\USER\Desktop\53全國賽試題(09商務軟體設計)\02 Software Design 1\LouvreLIS_Client\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\USER\Desktop\53全國賽試題(09商務軟體設計)\02 Software Design 1\LouvreLIS_Client\bin\Debug\EntityFramework.xml
+C:\Users\USER\Desktop\53全國賽試題(09商務軟體設計)\02 Software Design 1\LouvreLIS_Client\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\USER\Desktop\53全國賽試題(09商務軟體設計)\02 Software Design 1\LouvreLIS_Client\obj\Debug\LouvreLIS_Client.csproj.AssemblyReference.cache
+C:\Users\USER\Desktop\53全國賽試題(09商務軟體設計)\02 Software Design 1\LouvreLIS_Client\obj\Debug\LouvreLIS_Client.csproj.SuggestedBindingRedirects.cache
+C:\Users\USER\Desktop\53全國賽試題(09商務軟體設計)\02 Software Design 1\LouvreLIS_Client\obj\Debug\LouvreLIS_Client.Main.resources
+C:\Users\USER\Desktop\53全國賽試題(09商務軟體設計)\02 Software Design 1\LouvreLIS_Client\obj\Debug\LouvreLIS_Client.LoginForm.resources
+C:\Users\USER\Desktop\53全國賽試題(09商務軟體設計)\02 Software Design 1\LouvreLIS_Client\obj\Debug\LouvreLIS_Client.Properties.Resources.resources
+C:\Users\USER\Desktop\53全國賽試題(09商務軟體設計)\02 Software Design 1\LouvreLIS_Client\obj\Debug\LouvreLIS_Client.csproj.GenerateResource.cache
+C:\Users\USER\Desktop\53全國賽試題(09商務軟體設計)\02 Software Design 1\LouvreLIS_Client\obj\Debug\LouvreLIS_Client.csproj.CoreCompileInputs.cache
+C:\Users\USER\Desktop\53全國賽試題(09商務軟體設計)\02 Software Design 1\LouvreLIS_Client\obj\Debug\LouvreLIS_Client.csproj.CopyComplete
+C:\Users\USER\Desktop\53全國賽試題(09商務軟體設計)\02 Software Design 1\LouvreLIS_Client\obj\Debug\LouvreLIS_Client.exe
+C:\Users\USER\Desktop\53全國賽試題(09商務軟體設計)\02 Software Design 1\LouvreLIS_Client\obj\Debug\LouvreLIS_Client.pdb
+C:\Users\USER\Desktop\53全國賽試題(09商務軟體設計)\02 Software Design 1\LouvreLIS_Client\obj\Debug\LouvreLIS_Client.AccountInformationForm.resources
+C:\Users\USER\Desktop\53全國賽試題(09商務軟體設計)\02 Software Design 1\LouvreLIS_Client\obj\Debug\LouvreLIS_Client.ModifyForm.resources
+C:\Users\USER\Source\Repos\apple246680\LouvreLIS1_Client\LouvreLIS_Client\bin\Debug\LouvreLIS_Client.exe.config
+C:\Users\USER\Source\Repos\apple246680\LouvreLIS1_Client\LouvreLIS_Client\bin\Debug\LouvreLIS_Client.exe
+C:\Users\USER\Source\Repos\apple246680\LouvreLIS1_Client\LouvreLIS_Client\bin\Debug\LouvreLIS_Client.pdb
+C:\Users\USER\Source\Repos\apple246680\LouvreLIS1_Client\LouvreLIS_Client\bin\Debug\EntityFramework.dll
+C:\Users\USER\Source\Repos\apple246680\LouvreLIS1_Client\LouvreLIS_Client\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\USER\Source\Repos\apple246680\LouvreLIS1_Client\LouvreLIS_Client\bin\Debug\EntityFramework.xml
+C:\Users\USER\Source\Repos\apple246680\LouvreLIS1_Client\LouvreLIS_Client\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\USER\Source\Repos\apple246680\LouvreLIS1_Client\LouvreLIS_Client\obj\Debug\LouvreLIS_Client.csproj.AssemblyReference.cache
+C:\Users\USER\Source\Repos\apple246680\LouvreLIS1_Client\LouvreLIS_Client\obj\Debug\LouvreLIS_Client.csproj.SuggestedBindingRedirects.cache
+C:\Users\USER\Source\Repos\apple246680\LouvreLIS1_Client\LouvreLIS_Client\obj\Debug\LouvreLIS_Client.AccountInformationForm.resources
+C:\Users\USER\Source\Repos\apple246680\LouvreLIS1_Client\LouvreLIS_Client\obj\Debug\LouvreLIS_Client.Main.resources
+C:\Users\USER\Source\Repos\apple246680\LouvreLIS1_Client\LouvreLIS_Client\obj\Debug\LouvreLIS_Client.LoginForm.resources
+C:\Users\USER\Source\Repos\apple246680\LouvreLIS1_Client\LouvreLIS_Client\obj\Debug\LouvreLIS_Client.ModifyForm.resources
+C:\Users\USER\Source\Repos\apple246680\LouvreLIS1_Client\LouvreLIS_Client\obj\Debug\LouvreLIS_Client.Properties.Resources.resources
+C:\Users\USER\Source\Repos\apple246680\LouvreLIS1_Client\LouvreLIS_Client\obj\Debug\LouvreLIS_Client.csproj.GenerateResource.cache
+C:\Users\USER\Source\Repos\apple246680\LouvreLIS1_Client\LouvreLIS_Client\obj\Debug\LouvreLIS_Client.csproj.CoreCompileInputs.cache
+C:\Users\USER\Source\Repos\apple246680\LouvreLIS1_Client\LouvreLIS_Client\obj\Debug\LouvreLIS_Client.csproj.CopyComplete
+C:\Users\USER\Source\Repos\apple246680\LouvreLIS1_Client\LouvreLIS_Client\obj\Debug\LouvreLIS_Client.exe
+C:\Users\USER\Source\Repos\apple246680\LouvreLIS1_Client\LouvreLIS_Client\obj\Debug\LouvreLIS_Client.pdb
+C:\Users\USER\Source\Repos\apple246680\LouvreLIS1_Client\LouvreLIS_Client\obj\Debug\LouvreLIS_Client.ForgotForm.resources
+C:\Users\USER\Source\Repos\apple246680\LouvreLIS1_Client\LouvreLIS_Client\obj\Debug\LouvreLIS_Client.ForgotcodeForm.resources
