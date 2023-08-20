@@ -43,6 +43,7 @@ namespace LouvreLIS_Client
                 finddata.Gender = GenderCombobox.Text=="男"?"1":"2";
                 finddata.Visitor.PreferredLanguage= PreferredLanguageCombobox.Text== "French (France)"? "fr-fr" : "en-us";
                 entities.SaveChanges();
+                MessageBox.Show("成功");
             }
         }
     }

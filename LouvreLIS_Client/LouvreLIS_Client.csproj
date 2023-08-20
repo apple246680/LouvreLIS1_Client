@@ -67,6 +67,12 @@
     <Compile Include="Employee.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
+    <Compile Include="Forgot.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forgot.Designer.cs">
+      <DependentUpon>Forgot.cs</DependentUpon>
+    </Compile>
     <Compile Include="Main.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -110,6 +116,9 @@
     </Compile>
     <EmbeddedResource Include="AccountInformation.resx">
       <DependentUpon>AccountInformation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forgot.resx">
+      <DependentUpon>Forgot.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Main.resx">
       <DependentUpon>Main.cs</DependentUpon>

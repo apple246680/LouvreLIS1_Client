@@ -44,6 +44,18 @@ namespace LouvreLIS_Client
             instance.so(account.Username,account.EmailAddress,account.Gender,account.Visitor.PreferredLanguage,account.AccountStatus.ToString(),account.ID);
             instance.aaa = account;    
         }
+        public void showforgot() 
+        {
+            ShowPanel.Controls.Clear();
+            ForgotForm forgotForm = new ForgotForm();
+            forgotForm.TopLevel = false;
+            ShowPanel.Controls.Add(forgotForm);
+            forgotForm.Show();
+        }
+        static public void staticshowforgot() 
+        { 
+            instance.showforgot();
+        }
         private void Main_Load(object sender, EventArgs e)
         {
             TopPanel.Visible = false;

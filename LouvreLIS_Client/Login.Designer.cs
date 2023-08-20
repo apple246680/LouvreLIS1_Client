@@ -90,6 +90,7 @@
             this.ForgotLinkLabel.TabIndex = 5;
             this.ForgotLinkLabel.TabStop = true;
             this.ForgotLinkLabel.Text = "Forgot username/password";
+            this.ForgotLinkLabel.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.ForgotLinkLabel_LinkClicked);
             // 
             // LoginForm
             // 
