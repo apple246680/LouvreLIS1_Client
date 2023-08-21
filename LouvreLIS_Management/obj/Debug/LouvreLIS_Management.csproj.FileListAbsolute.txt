@@ -1,0 +1,17 @@
+C:\Users\USER\Desktop\LouvreLIS_Management\bin\Debug\LouvreLIS_Management.exe.config
+C:\Users\USER\Desktop\LouvreLIS_Management\bin\Debug\LouvreLIS_Management.exe
+C:\Users\USER\Desktop\LouvreLIS_Management\bin\Debug\LouvreLIS_Management.pdb
+C:\Users\USER\Desktop\LouvreLIS_Management\obj\Debug\LouvreLIS_Management.csproj.AssemblyReference.cache
+C:\Users\USER\Desktop\LouvreLIS_Management\obj\Debug\LouvreLIS_Management.Properties.Resources.resources
+C:\Users\USER\Desktop\LouvreLIS_Management\obj\Debug\LouvreLIS_Management.csproj.GenerateResource.cache
+C:\Users\USER\Desktop\LouvreLIS_Management\obj\Debug\LouvreLIS_Management.csproj.CoreCompileInputs.cache
+C:\Users\USER\Desktop\LouvreLIS_Management\obj\Debug\LouvreLIS_Management.exe
+C:\Users\USER\Desktop\LouvreLIS_Management\obj\Debug\LouvreLIS_Management.pdb
+C:\Users\USER\Desktop\LouvreLIS_Management\bin\Debug\EntityFramework.dll
+C:\Users\USER\Desktop\LouvreLIS_Management\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\USER\Desktop\LouvreLIS_Management\bin\Debug\EntityFramework.xml
+C:\Users\USER\Desktop\LouvreLIS_Management\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\USER\Desktop\LouvreLIS_Management\obj\Debug\LouvreLIS_Management.AccountInfoForm.resources
+C:\Users\USER\Desktop\LouvreLIS_Management\obj\Debug\LouvreLIS_Management.Main.resources
+C:\Users\USER\Desktop\LouvreLIS_Management\obj\Debug\LouvreLIS_Management.LoginForm.resources
+C:\Users\USER\Desktop\LouvreLIS_Management\obj\Debug\LouvreLIS_Management.csproj.CopyComplete
