@@ -20,7 +20,7 @@ namespace LouvreLIS_Client
             instance=this;
         }
         TicketsForm ticketsForm=new TicketsForm();
-        public void so(string name, string mail, string gender, string language,string status, Guid id) {
+        public void ShowAccountinfo(string name, string mail, string gender, string language,string status, Guid id) {
             SignInOutBtn.Text = "Sign out";
             UserNameLabel.Text = "Current User:" + name;
             AccountInformationBtn_Click(null,null);
@@ -35,17 +35,17 @@ namespace LouvreLIS_Client
    
         ModifyForm ModifyForm=new ModifyForm();
         public static void staticshowmodify() {
-            instance.showmodify();
+            instance.ShowModify();
         }
-        public void showmodify() 
+        public void ShowModify() 
         {
             ShowPanel.Controls.Clear();
             ModifyForm.TopLevel = false;
             ShowPanel.Controls.Add(ModifyForm);
-            ModifyForm.GetData(aaa.ID,aaa.EmailAddress,aaa.FirstName,aaa.LastName,aaa.Gender,aaa.Visitor.PreferredLanguage);
+            ModifyForm.GetData(VeryAccount.ID,VeryAccount.EmailAddress,VeryAccount.FirstName,VeryAccount.LastName,VeryAccount.Gender,VeryAccount.Visitor.PreferredLanguage);
             ModifyForm.Show();
         }
-        public void showforgotcode(string email,string title)
+        public void ShowForgotCode(string email,string title)
         {
             ForgotcodeForm forgotcodeForm=new ForgotcodeForm();
             ShowPanel.Controls.Clear();
@@ -56,16 +56,16 @@ namespace LouvreLIS_Client
         }
         static public void staticshowforgotcode(string email,string title)
         {
-            instance.showforgotcode(email,title);
+            instance.ShowForgotCode(email,title);
         }
-        Account aaa = null;
+        Account VeryAccount = null;
         static public void staticso(Account account)
         {
-            instance.so(account.Username,account.EmailAddress,account.Gender,account.Visitor.PreferredLanguage,account.AccountStatus.ToString(),account.ID);
-            instance.aaa = account;    
+            instance.ShowAccountinfo(account.Username,account.EmailAddress,account.Gender,account.Visitor.PreferredLanguage,account.AccountStatus.ToString(),account.ID);
+            instance.VeryAccount = account;    
         }
             ForgotForm forgotForm = new ForgotForm();
-        public void showforgot() 
+        public void ShowForgot() 
         {
             ShowPanel.Controls.Clear();
             forgotForm.TopLevel = false;
@@ -74,7 +74,7 @@ namespace LouvreLIS_Client
         }
         static public void staticshowforgot() 
         { 
-            instance.showforgot();
+            instance.ShowForgot();
         }
         private void Main_Load(object sender, EventArgs e)
         {
@@ -99,10 +99,9 @@ namespace LouvreLIS_Client
         }
         private void SignInBtn_Click(object sender, EventArgs e)
         {
-            if (SignInOutBtn.Text== "Sign In")
+            if (SignInOutBtn.Text== "Sign In"&&UserNameLabel.Text== "Current User:")
             {
                 Main_Load(null,null);
-                SignInOutBtn.Text = "Sing Out";
             }
             else
             {
@@ -116,7 +115,7 @@ namespace LouvreLIS_Client
             ShowPanel.Controls.Clear();
             ticketsForm.TopLevel = false;
             ShowPanel.Controls.Add(ticketsForm);
-            ticketsForm.getdata(aaa);
+            ticketsForm.getdata(VeryAccount);
             ticketsForm.Show();
         }
     }

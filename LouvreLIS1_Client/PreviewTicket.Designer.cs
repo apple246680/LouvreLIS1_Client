@@ -30,23 +30,42 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PreviewTicketForm));
             this.SavePDFBtn = new System.Windows.Forms.Button();
+            this.webBrowser1 = new System.Windows.Forms.WebBrowser();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.SuspendLayout();
             // 
             // SavePDFBtn
             // 
             this.SavePDFBtn.Location = new System.Drawing.Point(12, 3);
             this.SavePDFBtn.Name = "SavePDFBtn";
-            this.SavePDFBtn.Size = new System.Drawing.Size(477, 46);
+            this.SavePDFBtn.Size = new System.Drawing.Size(477, 33);
             this.SavePDFBtn.TabIndex = 0;
             this.SavePDFBtn.Text = "Save as PDF";
             this.SavePDFBtn.UseVisualStyleBackColor = true;
             this.SavePDFBtn.Click += new System.EventHandler(this.SavePDFBtn_Click);
+            // 
+            // webBrowser1
+            // 
+            this.webBrowser1.Location = new System.Drawing.Point(13, 42);
+            this.webBrowser1.MinimumSize = new System.Drawing.Size(20, 20);
+            this.webBrowser1.Name = "webBrowser1";
+            this.webBrowser1.Size = new System.Drawing.Size(476, 629);
+            this.webBrowser1.TabIndex = 1;
+            // 
+            // panel1
+            // 
+            this.panel1.Location = new System.Drawing.Point(12, 42);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(477, 139);
+            this.panel1.TabIndex = 2;
             // 
             // PreviewTicketForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(502, 683);
+            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.webBrowser1);
             this.Controls.Add(this.SavePDFBtn);
             this.Font = new System.Drawing.Font("Arial", 9F);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
@@ -62,5 +81,7 @@
         #endregion
 
         private System.Windows.Forms.Button SavePDFBtn;
+        private System.Windows.Forms.WebBrowser webBrowser1;
+        private System.Windows.Forms.Panel panel1;
     }
 }

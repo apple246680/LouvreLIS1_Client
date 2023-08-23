@@ -39,7 +39,7 @@ namespace LouvreLIS_Client
                 VerifyLabel.Visible = true;
             }
             GengerLabel.Text = "Genger:" + gender == "1" ? "Male" : "Female";
-            PreferredLanguageLabel.Text = "Preferred Language:" + language;
+            PreferredLanguageLabel.Text = "Preferred Language:" + (language=="eu-us"? "English (United States)" : "French (France)");
         }
         string MaskString(string input)
         {
@@ -59,20 +59,7 @@ namespace LouvreLIS_Client
             string domainPart = email.Substring(atIndex);
             return firstTwoChars + maskedPart + domainPart;
         }
-        private void ShowBtn_Click(object sender, EventArgs e)
-        {
-            if (ShowBtn.Text=="show")
-            {
-                UserNameLabel.Text = "Username:" + realname;
-                ShowBtn.Text = "hide";
-            }
-            else
-            {
-                UserNameLabel.Text = "Username:" + MaskString(realname);
-                ShowBtn.Text = "show";
-            }
-        }
-        int z = 0;
+        int errorpoint = 0;
         private void VerifyBtn_Click(object sender, EventArgs e)
         {
             if (CodeTextbox.Text==result)
@@ -86,19 +73,19 @@ namespace LouvreLIS_Client
             }
             else
             {
-                z++;
+                errorpoint++;
                 CodePanel.Visible = true;
-                    MessageBox.Show($"input error number:{z}");
-                if (z==3)
+                    MessageBox.Show($"input error number:{errorpoint}");
+                if (errorpoint==3)
                 {
-                    z = 0;
-                    if (i==0)
+                    errorpoint = 0;
+                    if (time==0)
                         VerifyLinkLabel_LinkClicked(null,null);
                 }
             }
         }
             string result = "";
-        int i = 0;
+        int time = 0;
         private void ModifyBtn_Click(object sender, EventArgs e)
         {
             Main.staticshowmodify();
@@ -106,13 +93,25 @@ namespace LouvreLIS_Client
 
         private void Timer1S_Tick(object sender, EventArgs e)
         {
-            i++;
-            if (i == 120)
+            time++;
+            if (time == 120)
             {
-                i = 0;
+                time = 0;
                 result = "";
                 Timer1S.Stop();
             }
+        }
+
+        private void ShowBtn_MouseDown(object sender, MouseEventArgs e)
+        {
+                UserNameLabel.Text = "Username:" + realname;
+                ShowBtn.Text = "hide";
+        }
+
+        private void ShowBtn_MouseUp(object sender, MouseEventArgs e)
+        {
+            UserNameLabel.Text = "Username:" + MaskString(realname);
+            ShowBtn.Text = "show";
         }
         private void VerifyLinkLabel_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
@@ -124,7 +123,7 @@ namespace LouvreLIS_Client
             mailMessage.To.Add(realmail);
             mailMessage.Subject = "Email Verification";
             var asd = (DateTime.Now.AddMinutes(2)).ToString("yyyy/MM/dd HH:mm:ss");
-            if (i==0)
+            if (time ==0)
             {
                 result = "";
                 int[] allowedNumbers = { 0, 2, 3, 4, 5, 6, 8, 9 };
@@ -141,13 +140,13 @@ namespace LouvreLIS_Client
                     MessageBox.Show("Something wentwrong, please try again later");
                 }
                 Timer1S.Start();
-                z = 0;
+                errorpoint = 0;
             CodePanel.Visible = true;
             MessageBox.Show("Your 6-digits verification code has been sent. Please type the verification code in 2 minutes.");
             }
             else
-                if(i<30)
-                MessageBox.Show($"Please wait {120-i} seconds before resending the verification code.");  
+                if(time <30)
+                MessageBox.Show($"Please wait {120-time} seconds before resending the verification code.");  
         }
     }
 }

@@ -135,7 +135,7 @@
             this.PreferredLanguageCombobox.FormattingEnabled = true;
             this.PreferredLanguageCombobox.Items.AddRange(new object[] {
             "French (France)",
-            "American (English)"});
+            "English (United States)"});
             this.PreferredLanguageCombobox.Location = new System.Drawing.Point(296, 235);
             this.PreferredLanguageCombobox.Name = "PreferredLanguageCombobox";
             this.PreferredLanguageCombobox.Size = new System.Drawing.Size(345, 36);

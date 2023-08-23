@@ -25,7 +25,7 @@ namespace LouvreLIS_Client
             FirstNameTextbox.Text=firstname;
             LastNameTextbox.Text=lastname;
             GenderCombobox.Text = gender == "1" ? "Male" : "Female";
-            PreferredLanguageCombobox.Text=language== "fr-fr"? "French (France)" : "American (English)";
+            PreferredLanguageCombobox.Text=language== "fr-fr"? "French (France)" : "English (United States)";
         }
         private void ReviseBtn_Click(object sender, EventArgs e)
         {
@@ -43,7 +43,7 @@ namespace LouvreLIS_Client
                 finddata.Gender = GenderCombobox.Text=="男"?"1":"2";
                 finddata.Visitor.PreferredLanguage= PreferredLanguageCombobox.Text== "French (France)"? "fr-fr" : "en-us";
                 entities.SaveChanges();
-                MessageBox.Show("成功");
+                MessageBox.Show("OK");
                 Main.backaccountinformation();
                 
             }

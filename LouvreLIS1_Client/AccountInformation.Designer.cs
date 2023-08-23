@@ -141,7 +141,8 @@
             this.ShowBtn.TabIndex = 1;
             this.ShowBtn.Text = "show";
             this.ShowBtn.UseVisualStyleBackColor = true;
-            this.ShowBtn.Click += new System.EventHandler(this.ShowBtn_Click);
+            this.ShowBtn.MouseDown += new System.Windows.Forms.MouseEventHandler(this.ShowBtn_MouseDown);
+            this.ShowBtn.MouseUp += new System.Windows.Forms.MouseEventHandler(this.ShowBtn_MouseUp);
             // 
             // EmailPanel
             // 

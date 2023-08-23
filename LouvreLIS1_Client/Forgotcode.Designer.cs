@@ -38,11 +38,11 @@
             this.Timer1S = new System.Windows.Forms.Timer(this.components);
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.InformationLabel = new System.Windows.Forms.Label();
-            this.UsernameLabel = new System.Windows.Forms.Label();
-            this.PasswordLabel = new System.Windows.Forms.Label();
-            this.FinishBtn = new System.Windows.Forms.Button();
             this.SignInBtn = new System.Windows.Forms.Button();
+            this.FinishBtn = new System.Windows.Forms.Button();
+            this.PasswordLabel = new System.Windows.Forms.Label();
+            this.UsernameLabel = new System.Windows.Forms.Label();
+            this.InformationLabel = new System.Windows.Forms.Label();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -123,7 +123,7 @@
             this.panel1.Controls.Add(this.GetCodeLinkLabel);
             this.panel1.Location = new System.Drawing.Point(3, 3);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(437, 144);
+            this.panel1.Size = new System.Drawing.Size(503, 144);
             this.panel1.TabIndex = 6;
             // 
             // panel2
@@ -135,45 +135,8 @@
             this.panel2.Controls.Add(this.InformationLabel);
             this.panel2.Location = new System.Drawing.Point(3, 153);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(437, 185);
+            this.panel2.Size = new System.Drawing.Size(503, 185);
             this.panel2.TabIndex = 7;
-            // 
-            // InformationLabel
-            // 
-            this.InformationLabel.AutoSize = true;
-            this.InformationLabel.Location = new System.Drawing.Point(32, 30);
-            this.InformationLabel.Name = "InformationLabel";
-            this.InformationLabel.Size = new System.Drawing.Size(184, 17);
-            this.InformationLabel.TabIndex = 0;
-            this.InformationLabel.Text = "InYour account information:";
-            // 
-            // UsernameLabel
-            // 
-            this.UsernameLabel.AutoSize = true;
-            this.UsernameLabel.Location = new System.Drawing.Point(127, 47);
-            this.UsernameLabel.Name = "UsernameLabel";
-            this.UsernameLabel.Size = new System.Drawing.Size(80, 17);
-            this.UsernameLabel.TabIndex = 1;
-            this.UsernameLabel.Text = "Username:";
-            // 
-            // PasswordLabel
-            // 
-            this.PasswordLabel.AutoSize = true;
-            this.PasswordLabel.Location = new System.Drawing.Point(127, 64);
-            this.PasswordLabel.Name = "PasswordLabel";
-            this.PasswordLabel.Size = new System.Drawing.Size(78, 17);
-            this.PasswordLabel.TabIndex = 2;
-            this.PasswordLabel.Text = "Password:";
-            // 
-            // FinishBtn
-            // 
-            this.FinishBtn.Location = new System.Drawing.Point(48, 103);
-            this.FinishBtn.Name = "FinishBtn";
-            this.FinishBtn.Size = new System.Drawing.Size(137, 69);
-            this.FinishBtn.TabIndex = 3;
-            this.FinishBtn.Text = "< Finish";
-            this.FinishBtn.UseVisualStyleBackColor = true;
-            this.FinishBtn.Click += new System.EventHandler(this.FinishBtn_Click);
             // 
             // SignInBtn
             // 
@@ -185,13 +148,50 @@
             this.SignInBtn.UseVisualStyleBackColor = true;
             this.SignInBtn.Click += new System.EventHandler(this.SignInBtn_Click);
             // 
+            // FinishBtn
+            // 
+            this.FinishBtn.Location = new System.Drawing.Point(48, 103);
+            this.FinishBtn.Name = "FinishBtn";
+            this.FinishBtn.Size = new System.Drawing.Size(137, 69);
+            this.FinishBtn.TabIndex = 3;
+            this.FinishBtn.Text = "< Finish";
+            this.FinishBtn.UseVisualStyleBackColor = true;
+            this.FinishBtn.Click += new System.EventHandler(this.FinishBtn_Click);
+            // 
+            // PasswordLabel
+            // 
+            this.PasswordLabel.AutoSize = true;
+            this.PasswordLabel.Location = new System.Drawing.Point(127, 64);
+            this.PasswordLabel.Name = "PasswordLabel";
+            this.PasswordLabel.Size = new System.Drawing.Size(78, 17);
+            this.PasswordLabel.TabIndex = 2;
+            this.PasswordLabel.Text = "Password:";
+            // 
+            // UsernameLabel
+            // 
+            this.UsernameLabel.AutoSize = true;
+            this.UsernameLabel.Location = new System.Drawing.Point(127, 47);
+            this.UsernameLabel.Name = "UsernameLabel";
+            this.UsernameLabel.Size = new System.Drawing.Size(80, 17);
+            this.UsernameLabel.TabIndex = 1;
+            this.UsernameLabel.Text = "Username:";
+            // 
+            // InformationLabel
+            // 
+            this.InformationLabel.AutoSize = true;
+            this.InformationLabel.Location = new System.Drawing.Point(32, 30);
+            this.InformationLabel.Name = "InformationLabel";
+            this.InformationLabel.Size = new System.Drawing.Size(184, 17);
+            this.InformationLabel.TabIndex = 0;
+            this.InformationLabel.Text = "InYour account information:";
+            // 
             // flowLayoutPanel1
             // 
             this.flowLayoutPanel1.Controls.Add(this.panel1);
             this.flowLayoutPanel1.Controls.Add(this.panel2);
             this.flowLayoutPanel1.Location = new System.Drawing.Point(171, 24);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(445, 354);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(506, 354);
             this.flowLayoutPanel1.TabIndex = 8;
             // 
             // ForgotcodeForm

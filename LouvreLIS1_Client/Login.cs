@@ -24,7 +24,7 @@ namespace LouvreLIS_Client
                     MessageBox.Show("Cannot sign in for employees.");
                 else
                 {
-                    MessageBox.Show("登入成功");
+                    MessageBox.Show("OK");
                     Main.staticso(match);
                 }
             else if (match != null && match.AccountType == 0)
