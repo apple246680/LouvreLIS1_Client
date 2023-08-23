@@ -8,6 +8,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Net.Http;
+using static System.Net.WebRequestMethods;
+using System.Net.Http.Headers;
+using System.Text.Json;
 
 namespace LouvreLIS_Management
 {
@@ -59,9 +63,35 @@ namespace LouvreLIS_Management
             accountInfoForm.run(account);
             accountInfoForm.Show();
         }
+        HttpResponseMessage response = new HttpResponseMessage();
+        HttpClient http=new HttpClient();
+        string jsonData;
         private void Main_Load(object sender, EventArgs e)
         {
             SignBtn_Click(sender, e);
+            Random rd = new Random();
+            http.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+            jsonData = JsonSerializer.Serialize(new
+            {
+                StationNumber=rd.Next(1,20)
+            });
+            
+            Every5S_Tick(null,null);
+            Every5S.Start();
+        }
+        private async void Every5S_Tick(object sender, EventArgs e)
+        {
+            var  content = new StringContent(jsonData, Encoding.UTF8, "application/json");
+            HttpResponseMessage  esponse = await http.PostAsync("http://localhost:500/api/ConnectionMonitor/RetrieveSiteStatus", content);
+            if (esponse.IsSuccessStatusCode)
+            {
+                string jsonResponse1 = esponse.Content.ReadAsStringAsync().Result;
+                JsonDocument doc1 = JsonDocument.Parse(jsonResponse1);
+                int Status = doc1.RootElement.GetProperty("Status").GetInt32();
+                ApiStatusLabel.Text = "API Status:"+(Status==2? "Warning" : "Good");
+                ApiNumberLabel.Text = $"[{doc1.RootElement.GetProperty("Data").GetString()}]";
+                ApiStatusBallLabel.ForeColor=Status==2?Color.Yellow:Color.Lime;
+            }
         }
     }
 }

@@ -15,3 +15,14 @@ C:\Users\USER\Desktop\LouvreLIS_Management\obj\Debug\LouvreLIS_Management.Accoun
 C:\Users\USER\Desktop\LouvreLIS_Management\obj\Debug\LouvreLIS_Management.Main.resources
 C:\Users\USER\Desktop\LouvreLIS_Management\obj\Debug\LouvreLIS_Management.LoginForm.resources
 C:\Users\USER\Desktop\LouvreLIS_Management\obj\Debug\LouvreLIS_Management.csproj.CopyComplete
+C:\Users\USER\Desktop\LouvreLIS_Management\bin\Debug\System.Memory.dll
+C:\Users\USER\Desktop\LouvreLIS_Management\bin\Debug\System.Text.Json.dll
+C:\Users\USER\Desktop\LouvreLIS_Management\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\USER\Desktop\LouvreLIS_Management\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\USER\Desktop\LouvreLIS_Management\bin\Debug\System.Buffers.dll
+C:\Users\USER\Desktop\LouvreLIS_Management\bin\Debug\System.ValueTuple.dll
+C:\Users\USER\Desktop\LouvreLIS_Management\bin\Debug\System.Text.Encodings.Web.dll
+C:\Users\USER\Desktop\LouvreLIS_Management\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\USER\Desktop\LouvreLIS_Management\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\USER\Desktop\LouvreLIS_Management\obj\Debug\LouvreLIS_Management.csproj.SuggestedBindingRedirects.cache
+C:\Users\USER\Desktop\LouvreLIS_Management\obj\Debug\LouvreLIS_Management.exe.config

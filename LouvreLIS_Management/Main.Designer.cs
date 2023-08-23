@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Main));
             this.DownPanel = new System.Windows.Forms.Panel();
             this.UsernameLabel = new System.Windows.Forms.Label();
@@ -40,6 +41,7 @@
             this.TopPanel = new System.Windows.Forms.Panel();
             this.AccountInfoBtn = new System.Windows.Forms.Button();
             this.ShowPanel = new System.Windows.Forms.Panel();
+            this.Every5S = new System.Windows.Forms.Timer(this.components);
             this.DownPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -158,6 +160,11 @@
             this.ShowPanel.Size = new System.Drawing.Size(800, 393);
             this.ShowPanel.TabIndex = 2;
             // 
+            // Every5S
+            // 
+            this.Every5S.Interval = 5000;
+            this.Every5S.Tick += new System.EventHandler(this.Every5S_Tick);
+            // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
@@ -193,6 +200,7 @@
         private System.Windows.Forms.Label UsernameLabel;
         private System.Windows.Forms.Button SignBtn;
         private System.Windows.Forms.Button AccountInfoBtn;
+        private System.Windows.Forms.Timer Every5S;
     }
 }
 
