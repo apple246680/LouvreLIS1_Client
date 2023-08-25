@@ -1,10 +1,13 @@
-﻿Microsoft Visual Studio Solution File, Format Version 12.00
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.7.34009.444
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LouvreLIS_Client", "LouvreLIS_Client\LouvreLIS_Client.csproj", "{CF8BE9AD-EA69-48FA-9B47-04AE9C9B42DF}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LouvreLIS_Management", "LouvreLIS_Management\LouvreLIS_Management.csproj", "{EF3B75B5-5BB3-4674-A4D8-7E7173AD7EA2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LouvreLIS_UnitTest", "LouvreLIS_UnitTest\LouvreLIS_UnitTest.csproj", "{ED7D2355-B75E-4E6F-92F0-222D708A78BC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -20,6 +23,10 @@ Global
 		{EF3B75B5-5BB3-4674-A4D8-7E7173AD7EA2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EF3B75B5-5BB3-4674-A4D8-7E7173AD7EA2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EF3B75B5-5BB3-4674-A4D8-7E7173AD7EA2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ED7D2355-B75E-4E6F-92F0-222D708A78BC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ED7D2355-B75E-4E6F-92F0-222D708A78BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ED7D2355-B75E-4E6F-92F0-222D708A78BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ED7D2355-B75E-4E6F-92F0-222D708A78BC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
