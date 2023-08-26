@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LoginForm));
             this.LoginGroupBox = new System.Windows.Forms.GroupBox();
             this.ShowPasswordCheckBox = new System.Windows.Forms.CheckBox();
             this.KeepSigninCheckBox = new System.Windows.Forms.CheckBox();
@@ -175,9 +176,11 @@
             // 
             // LogoPict
             // 
+            this.LogoPict.Image = ((System.Drawing.Image)(resources.GetObject("LogoPict.Image")));
             this.LogoPict.Location = new System.Drawing.Point(250, 3);
             this.LogoPict.Name = "LogoPict";
             this.LogoPict.Size = new System.Drawing.Size(285, 50);
+            this.LogoPict.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.LogoPict.TabIndex = 6;
             this.LogoPict.TabStop = false;
             // 

@@ -14,15 +14,24 @@ namespace WSC1
     
     public partial class User
     {
-        public System.Guid ID { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
+        public User()
+        {
+            this.Items = new HashSet<Item>();
+        }
+    
+        public long ID { get; set; }
+        public System.Guid GUID { get; set; }
+        public long UserTypeID { get; set; }
         public string Username { get; set; }
         public string Password { get; set; }
-        public string LastName { get; set; }
-        public string FirstName { get; set; }
-        public byte Gender { get; set; }
-        public System.DateTime Birthday { get; set; }
-        public bool Status { get; set; }
+        public string FullName { get; set; }
+        public bool Gender { get; set; }
+        public System.DateTime BirthDate { get; set; }
+        public int FamilyCount { get; set; }
     
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<Item> Items { get; set; }
         public virtual UserType UserType { get; set; }
     }
 }

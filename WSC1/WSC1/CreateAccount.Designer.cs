@@ -130,13 +130,13 @@
             this.FemaleRadioButton.Name = "FemaleRadioButton";
             this.FemaleRadioButton.Size = new System.Drawing.Size(78, 21);
             this.FemaleRadioButton.TabIndex = 11;
-            this.FemaleRadioButton.TabStop = true;
             this.FemaleRadioButton.Text = "Female";
             this.FemaleRadioButton.UseVisualStyleBackColor = true;
             // 
             // MaleRadioButton
             // 
             this.MaleRadioButton.AutoSize = true;
+            this.MaleRadioButton.Checked = true;
             this.MaleRadioButton.Location = new System.Drawing.Point(459, 148);
             this.MaleRadioButton.Name = "MaleRadioButton";
             this.MaleRadioButton.Size = new System.Drawing.Size(59, 21);
@@ -227,6 +227,7 @@
             this.RegisterBtn.TabIndex = 1;
             this.RegisterBtn.Text = "Register && login";
             this.RegisterBtn.UseVisualStyleBackColor = true;
+            this.RegisterBtn.Click += new System.EventHandler(this.RegisterBtn_Click);
             // 
             // BaclLoginBtn
             // 

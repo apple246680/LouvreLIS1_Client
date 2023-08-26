@@ -25,6 +25,22 @@ namespace WSC1
             throw new UnintentionalCodeFirstException();
         }
     
+        public virtual DbSet<Amenity> Amenities { get; set; }
+        public virtual DbSet<Area> Areas { get; set; }
+        public virtual DbSet<Attraction> Attractions { get; set; }
+        public virtual DbSet<CancellationPolicy> CancellationPolicies { get; set; }
+        public virtual DbSet<CancellationRefundFee> CancellationRefundFees { get; set; }
+        public virtual DbSet<Coupon> Coupons { get; set; }
+        public virtual DbSet<DimDate> DimDates { get; set; }
+        public virtual DbSet<ItemAmenity> ItemAmenities { get; set; }
+        public virtual DbSet<ItemAttraction> ItemAttractions { get; set; }
+        public virtual DbSet<ItemPicture> ItemPictures { get; set; }
+        public virtual DbSet<ItemPrice> ItemPrices { get; set; }
+        public virtual DbSet<Item> Items { get; set; }
+        public virtual DbSet<ItemType> ItemTypes { get; set; }
+        public virtual DbSet<sysdiagram> sysdiagrams { get; set; }
+        public virtual DbSet<Transaction> Transactions { get; set; }
+        public virtual DbSet<TransactionType> TransactionTypes { get; set; }
         public virtual DbSet<User> Users { get; set; }
         public virtual DbSet<UserType> UserTypes { get; set; }
     }

@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using WSC1;
+
 namespace System
 {
     public partial class LoginForm : UserControl
@@ -31,30 +33,34 @@ namespace System
         private void LoginBtn_Click(object sender, EventArgs e)
         {
             entities = new Session1Entities();
-            var match = entities.Users  .FirstOrDefault(x => x.Username == UserTextBox.Text);
-            if (match != null)
+            if (!string.IsNullOrEmpty(EmployeeTextBox.Text))
             {
-                if (match.Password == PasswordTextBox.Text)
+                var match = entities.Users.FirstOrDefault(x=>x.Username==EmployeeTextBox.Text&&x.UserType.Name== "employee"&&x.Password==PasswordTextBox.Text);
+                if (match != null)
                 {
-                    if (match.UserType.TypeID== 0)
-                    {
-                        MessageBox.Show("OK");
-                    }
-                    else if (match.UserType.TypeID == 1)
-                    {
-                        if (EmployeeTextBox.Text==match.UserType.EmployeeNumber)
-                        {
-                            MessageBox.Show("notOK");
-                        }
-                    }
+                    MessageBox.Show("employee login ok");
+                    Global.UserId = match.ID;
+                    Global.ShowManagementForm();
+                }
+                else
+                {
+                    MessageBox.Show("error");
                 }
             }
-            else
+            else if(!string.IsNullOrEmpty(UserTextBox.Text))
             {
-                MessageBox.Show("error");
+                var match = entities.Users.FirstOrDefault(x => x.Username == UserTextBox.Text && x.UserType.Name == "user" && x.Password == PasswordTextBox.Text);
+                if (match != null)
+                {
+                    MessageBox.Show("user login ok");
+                    Global.UserId = match.ID;
+                    Global.ShowManagementForm();
+                }
+                else
+                {
+                    MessageBox.Show("error");
+                }
             }
-
-
 
         }
     }

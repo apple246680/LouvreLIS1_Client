@@ -55,7 +55,46 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Amenity.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Area.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Attraction.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CancellationPolicy.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CancellationRefundFee.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Coupon.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DimDate.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
     <Compile Include="Global.cs" />
+    <Compile Include="Item.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ItemAmenity.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ItemAttraction.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ItemPicture.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ItemPrice.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ItemType.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
     <Compile Include="Main.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -91,8 +130,59 @@
     <Compile Include="Login.Designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
     </Compile>
+    <Compile Include="Management.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Management.Designer.cs">
+      <DependentUpon>Management.cs</DependentUpon>
+    </Compile>
+    <Compile Include="sysdiagram.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Transaction.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TransactionType.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
     <Compile Include="User.cs">
       <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Traveler.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Traveler.Designer.cs">
+      <DependentUpon>Traveler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Manager.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Manager.Designer.cs">
+      <DependentUpon>Manager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddAndEdit.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AddAndEdit.Designer.cs">
+      <DependentUpon>AddAndEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ListingDetaills.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ListingDetaills.Designer.cs">
+      <DependentUpon>ListingDetaills.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Amenities.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Amenities.Designer.cs">
+      <DependentUpon>Amenities.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DistanceToAttraction.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DistanceToAttraction.Designer.cs">
+      <DependentUpon>DistanceToAttraction.cs</DependentUpon>
     </Compile>
     <Compile Include="UserType.cs">
       <DependentUpon>Model1.tt</DependentUpon>
@@ -115,6 +205,27 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Management.resx">
+      <DependentUpon>Management.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Traveler.resx">
+      <DependentUpon>Traveler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manager.resx">
+      <DependentUpon>Manager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddAndEdit.resx">
+      <DependentUpon>AddAndEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListingDetaills.resx">
+      <DependentUpon>ListingDetaills.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Amenities.resx">
+      <DependentUpon>Amenities.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DistanceToAttraction.resx">
+      <DependentUpon>DistanceToAttraction.cs</DependentUpon>
     </EmbeddedResource>
     <EntityDeploy Include="Model1.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
