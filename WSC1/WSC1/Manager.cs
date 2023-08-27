@@ -19,16 +19,8 @@ namespace WSC1
         }
         private void AddBtn_Click(object sender, EventArgs e)
         {
-            Session1Entities entities = new Session1Entities();
-            var asd = entities.Items.Select(x => new
-            {
-                Title = x.Title,
-                Capacity = x.Capacity,
-                Area = x.Area.Name,
-                Type = x.ItemType.Name
-            }).ToList();
-            foreach (var x in asd)
-                ShowDataGridView.Rows.Add(x.Title, x.Capacity, x.Area, x.Type, "Edit Details");
+            Global.addoredit = "add";
+            Global.ShowAddAndEditForm();
         }
 
         private void ShowDataGridView_CellClick(object sender, DataGridViewCellEventArgs e)
@@ -39,10 +31,25 @@ namespace WSC1
                 var sad = ShowDataGridView.Rows[e.RowIndex].Cells[0].Value.ToString();
                 if (ShowDataGridView.Rows[e.RowIndex].Cells[4].Value.ToString()== "Edit Details")
                 {
-                    Global.selectitemid=entities.Items.Where(x=>x.Title==sad).Select(x=>x.ID).FirstOrDefault();
+                    Global.addoredit = "edit";
+                    Global.selectitem = entities.Items.FirstOrDefault(x => x.Title == sad);
                     Global.ShowAddAndEditForm();
                 }
             }
+        }
+        private void ManagerForm_Load(object sender, EventArgs e)
+        {
+            ShowDataGridView.Rows.Clear();
+            Session1Entities entities = new Session1Entities();
+            var asd = entities.Items.Where(x=>x.UserID== Global.UserId).Select(x => new
+            {
+                Title = x.Title,
+                Capacity = x.Capacity,
+                Area = x.Area.Name,
+                Type = x.ItemType.Name
+            }).ToList();
+            foreach (var x in asd)
+                ShowDataGridView.Rows.Add(x.Title, x.Capacity, x.Area, x.Type, "Edit Details");
         }
     }
 }

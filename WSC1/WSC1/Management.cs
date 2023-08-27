@@ -41,9 +41,7 @@ namespace WSC1
 
         private void ManagementForm_Load(object sender, EventArgs e)
         {
-            Session1Entities entities=new Session1Entities();
-            imTravelerToolStripMenuItem.Visible = entities.Users.Find(Global.UserId).UserType.Name == "user";
-            imOwnerManagerToolStripMenuItem.Visible = entities.Users.Find(Global.UserId).UserType.Name == "employee";
+            imTravelerToolStripMenuItem_Click(sender,e);
         }
     }
 }

@@ -34,7 +34,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(782, 453);
+            this.ClientSize = new System.Drawing.Size(782, 513);
             this.Font = new System.Drawing.Font("Arial", 9F);
             this.MaximizeBox = false;
             this.Name = "Main";

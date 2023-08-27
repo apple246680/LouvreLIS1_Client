@@ -16,5 +16,11 @@ namespace WSC1
         {
             InitializeComponent();
         }
+        public void run()
+        {
+            Session1Entities entities = new Session1Entities();
+            foreach (var entity in entities.Amenities.Select(x => x.Name))
+                dataGridView1.Rows.Add(entity,Global.selectitem.ItemAmenities.Any(x=>x.Amenity.Name==entity));
+        }
     }
 }

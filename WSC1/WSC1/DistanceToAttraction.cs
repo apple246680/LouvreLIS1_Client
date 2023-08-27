@@ -16,5 +16,13 @@ namespace WSC1
         {
             InitializeComponent();
         }
+        public void run()
+        {
+            Session1Entities entities = new Session1Entities();
+            foreach (var entity in entities.ItemAttractions.Where(x=>x.ItemID==Global.selectitem.ID))
+            {
+               ShowDataGridView.Rows.Add(entity.Attraction.Name,entity.Attraction.Area.Name,entity.Distance,entity.DurationOnFoot,entity.DurationByCar);
+            }
+        }
     }
 }

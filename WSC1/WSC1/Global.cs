@@ -34,7 +34,6 @@ namespace System
             Main.ins.Controls.Add(managementForm);
             managementForm.Show();
         }
-        public static long selectitemid { get; set; }
         public static void ShowAddAndEditForm()
         {
             Main.ins.Text= "Seoul Stay - Add/Edit Listing";
@@ -43,5 +42,7 @@ namespace System
             Main.ins.Controls.Add(addAndEditForm);
             addAndEditForm.Show();
         }
+        public static Item selectitem;
+        public static string addoredit { get; set; }
     }
 }

@@ -172,7 +172,7 @@
             // MaximumLabel
             // 
             this.MaximumLabel.AutoSize = true;
-            this.MaximumLabel.Location = new System.Drawing.Point(410, 390);
+            this.MaximumLabel.Location = new System.Drawing.Point(464, 390);
             this.MaximumLabel.Name = "MaximumLabel";
             this.MaximumLabel.Size = new System.Drawing.Size(75, 17);
             this.MaximumLabel.TabIndex = 12;
@@ -180,6 +180,7 @@
             // 
             // TypeComboBox
             // 
+            this.TypeComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.TypeComboBox.FormattingEnabled = true;
             this.TypeComboBox.Location = new System.Drawing.Point(135, 31);
             this.TypeComboBox.Name = "TypeComboBox";
@@ -256,14 +257,19 @@
             // 
             this.MinimumnumericUpDown.Location = new System.Drawing.Point(363, 390);
             this.MinimumnumericUpDown.Name = "MinimumnumericUpDown";
-            this.MinimumnumericUpDown.Size = new System.Drawing.Size(41, 25);
+            this.MinimumnumericUpDown.Size = new System.Drawing.Size(95, 25);
             this.MinimumnumericUpDown.TabIndex = 23;
             // 
             // MaximumnumericUpDown
             // 
-            this.MaximumnumericUpDown.Location = new System.Drawing.Point(477, 392);
+            this.MaximumnumericUpDown.Location = new System.Drawing.Point(545, 390);
+            this.MaximumnumericUpDown.Maximum = new decimal(new int[] {
+            1569325055,
+            23283064,
+            0,
+            0});
             this.MaximumnumericUpDown.Name = "MaximumnumericUpDown";
-            this.MaximumnumericUpDown.Size = new System.Drawing.Size(41, 25);
+            this.MaximumnumericUpDown.Size = new System.Drawing.Size(135, 25);
             this.MaximumnumericUpDown.TabIndex = 24;
             // 
             // ListingDetaillsForm
@@ -298,6 +304,7 @@
             this.Font = new System.Drawing.Font("Arial", 9F);
             this.Name = "ListingDetaillsForm";
             this.Size = new System.Drawing.Size(790, 430);
+            this.Load += new System.EventHandler(this.ListingDetaillsForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.CapacitynumericUpDown)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.BednumericUpDown)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.BedroomnumericUpDown)).EndInit();

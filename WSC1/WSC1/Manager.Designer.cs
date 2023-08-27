@@ -119,6 +119,7 @@
             this.Font = new System.Drawing.Font("Arial", 9F);
             this.Name = "ManagerForm";
             this.Size = new System.Drawing.Size(750, 300);
+            this.Load += new System.EventHandler(this.ManagerForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.ShowDataGridView)).EndInit();
             this.ResumeLayout(false);
 
