@@ -27,20 +27,30 @@ namespace WSC1
         }
         private void AddAndEditForm_Load(object sender, EventArgs e)
         {
-            listingDetallsToolStripMenuItem_Click(null,null);
+            amenitiesToolStripMenuItem_Click(sender,e);
+            listingDetallsToolStripMenuItem_Click(sender,e);
+            if (Global.addoredit=="add")
+            {
+            i++;
+            listingDetallsToolStripMenuItem.Enabled = i == 1;
+            amenitiesToolStripMenuItem.Enabled = i == 2;
+            diistanceToAttractionToolStripMenuItem.Enabled = i == 3;
+            }
             NextBtn.Visible = Global.addoredit == "add";
             CloseBtn.Visible = Global.addoredit == "edit";
         }
         private void CloseBtn_Click(object sender, EventArgs e)
         {
             ListingDetaillsForm.ins.send();
+            AmenitiesForm.ins.ur();
+            Global.ShowManagementForm();
+            MessageBox.Show("send ok");
         }
         private void amenitiesToolStripMenuItem_Click(object sender, EventArgs e)
         {
             ShowPanel.Controls.Clear();
             AmenitiesForm amenities = new AmenitiesForm();
             ShowPanel.Controls.Add(amenities);
-            if (Global.addoredit == "edit")
                 amenities.run();
             amenities.Show();
         }
@@ -53,6 +63,31 @@ namespace WSC1
             if (Global.addoredit == "edit")
                 distance.run();
             distance.Show();
+        }
+        int i = 0;
+        private void NextBtn_Click(object sender, EventArgs e)
+        {
+            if (ListingDetaillsForm.ins.iasdfa())
+            {
+                MessageBox.Show("error");
+                return;
+            }
+            i++;
+            if (i == 2) 
+            { 
+                amenitiesToolStripMenuItem_Click(sender,e);
+                ListingDetaillsForm.ins.send();
+            }
+            if (i == 3) 
+            { 
+                diistanceToAttractionToolStripMenuItem_Click(sender,e);
+                AmenitiesForm.ins.ur();
+            }
+            if(i==4)
+                Global.ShowManagementForm();
+            listingDetallsToolStripMenuItem.Enabled = i == 1;
+            amenitiesToolStripMenuItem.Enabled = i == 2;
+            diistanceToAttractionToolStripMenuItem.Enabled = i == 3;
         }
     }
 }

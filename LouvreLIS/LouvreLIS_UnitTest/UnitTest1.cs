@@ -66,3 +66,4 @@ namespace LouvreLIS_UnitTest
             if (count < 480) Assert.Fail(); else Assert.Pass();
         }
     }
+}

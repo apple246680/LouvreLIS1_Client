@@ -30,7 +30,6 @@ namespace WSC1
             ShowPanel.Controls.Add(frm);
             frm.Show();
         }
-
         private void imOwnerManagerToolStripMenuItem_Click(object sender, EventArgs e)
         {
             ShowPanel.Controls.Clear();
@@ -41,7 +40,12 @@ namespace WSC1
 
         private void ManagementForm_Load(object sender, EventArgs e)
         {
-            imTravelerToolStripMenuItem_Click(sender,e);
+            if (new Session1Entities().Users.Any(x => x.ID == Global.UserId && x.UserType.Name == "employee"))
+                imOwnerManagerToolStripMenuItem_Click(sender,e);
+            else
+                imTravelerToolStripMenuItem_Click(sender, e);
+                imTravelerToolStripMenuItem.Visible = !new Session1Entities().Users.Any(x => x.ID == Global.UserId && x.UserType.Name == "employee");
+                imOwnerManagerToolStripMenuItem.Visible = new Session1Entities().Users.Any(x => x.ID == Global.UserId && x.UserType.Name == "employee");
         }
     }
 }

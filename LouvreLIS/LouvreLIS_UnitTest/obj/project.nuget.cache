@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "1BmX7RtcsMjr+OdBJKSXYAUZJnllBjmbAMUENLbZcOmCDLxVSbH4hTtDISm8JTorMnlDtD36rXob0tRk1cUD/A==",
+  "dgSpecHash": "eknNNaFKMekYkpMGHJn7KB79UGP/h8ME/wWxMR0VPOSp1IsQ+b1RZJKsXQGOhEQReTtW+jmLzXOy+ZtNMbaUZg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\USER\\Desktop\\LouvreLIS\\LouvreLIS_UnitTest\\LouvreLIS_UnitTest.csproj",
+  "projectFilePath": "C:\\Users\\USER\\Documents\\GitHub\\LouvreLIS1_Client\\LouvreLIS\\LouvreLIS_UnitTest\\LouvreLIS_UnitTest.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\USER\\.nuget\\packages\\coverlet.collector\\3.2.0\\coverlet.collector.3.2.0.nupkg.sha512",
     "C:\\Users\\USER\\.nuget\\packages\\microsoft.codecoverage\\17.5.0\\microsoft.codecoverage.17.5.0.nupkg.sha512",

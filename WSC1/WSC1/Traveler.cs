@@ -29,7 +29,7 @@ namespace WSC1
         private void TravelerForm_Load(object sender, EventArgs e)
         {
             Session1Entities entities = new Session1Entities();
-            var asd = entities.Items.Select(x => new
+            var asd = entities.Items.Where(x=>x.UserID==Global.UserId).Select(x => new
             {
                 Title = x.Title,
                 Capacity = x.Capacity,
@@ -44,7 +44,7 @@ namespace WSC1
             Session1Entities entities = new Session1Entities();
             if (SearchTextBox.Text != "Search destination or Listing Title or Attraction")
             {
-                var asd = entities.Items.Where(x => x.Title.Contains(SearchTextBox.Text)).Select(x => new
+                var asd = entities.Items.Where(x => x.UserID == Global.UserId).Where(x => x.Title.Contains(SearchTextBox.Text)||x.Area.Name.Contains(SearchTextBox.Text)||x.Capacity.ToString().Contains(SearchTextBox.Text)).Select(x => new
                 {
                     Title = x.Title,
                     Capacity = x.Capacity,

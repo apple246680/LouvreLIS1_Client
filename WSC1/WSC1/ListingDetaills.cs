@@ -41,6 +41,12 @@ namespace WSC1
             Session1Entities entities = new Session1Entities();
             TypeComboBox.Items.AddRange(entities.ItemTypes.Select(x => x.Name).ToArray());
         }
+        public bool iasdfa()
+        {
+                if(TypeComboBox.Text == "" || TitleTextBox.Text == ""|| CapacitynumericUpDown.Value == 0 || BednumericUpDown.Value == 0 || BedroomnumericUpDown.Value == 0 || BathroomnumericUpDown.Value == 0 || ApproximateTextBox.Text == "" || ExactTextBox.Text == "" || DescriptionTextBox.Text == "" || HostTextBox.Text == "" || MinimumnumericUpDown.Value == 0 || MaximumnumericUpDown.Value == 0 || MinimumnumericUpDown.Value >= MaximumnumericUpDown.Value)
+                return true; 
+            else return false;
+        }
         public void send()
         {
             Session1Entities entities = new Session1Entities();
@@ -62,6 +68,7 @@ namespace WSC1
                     aaa.HostRules = HostTextBox.Text;
                     aaa.MinimumNights=(int)MinimumnumericUpDown.Value;
                     aaa.MaximumNights=(int)MaximumnumericUpDown.Value;
+                    entities.SaveChanges();
                 }
             }
             else
@@ -83,10 +90,9 @@ namespace WSC1
                 item.MinimumNights = (int)MinimumnumericUpDown.Value;
                 item.MaximumNights = (int)MaximumnumericUpDown.Value;
                 entities.Items.Add(item);
+                entities.SaveChanges();
+                Global.selectitem = entities.Items.FirstOrDefault(x=>x.Title==TitleTextBox.Text);
             }
-            entities.SaveChanges();
-            MessageBox.Show("send ok");
-            Global.ShowManagementForm();
         }
     }
 }

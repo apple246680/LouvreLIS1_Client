@@ -46,6 +46,7 @@
             this.NextBtn.TabIndex = 0;
             this.NextBtn.Text = "Next";
             this.NextBtn.UseVisualStyleBackColor = true;
+            this.NextBtn.Click += new System.EventHandler(this.NextBtn_Click);
             // 
             // CloseBtn
             // 
