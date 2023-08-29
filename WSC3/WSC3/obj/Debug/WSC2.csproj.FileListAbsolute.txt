@@ -1,9 +1,0 @@
-C:\Users\USER\Desktop\WSC2\WSC2\bin\Debug\WSC2.exe.config
-C:\Users\USER\Desktop\WSC2\WSC2\bin\Debug\WSC2.exe
-C:\Users\USER\Desktop\WSC2\WSC2\bin\Debug\WSC2.pdb
-C:\Users\USER\Desktop\WSC2\WSC2\obj\Debug\WSC2.csproj.AssemblyReference.cache
-C:\Users\USER\Desktop\WSC2\WSC2\obj\Debug\WSC2.Properties.Resources.resources
-C:\Users\USER\Desktop\WSC2\WSC2\obj\Debug\WSC2.csproj.GenerateResource.cache
-C:\Users\USER\Desktop\WSC2\WSC2\obj\Debug\WSC2.csproj.CoreCompileInputs.cache
-C:\Users\USER\Desktop\WSC2\WSC2\obj\Debug\WSC2.exe
-C:\Users\USER\Desktop\WSC2\WSC2\obj\Debug\WSC2.pdb
