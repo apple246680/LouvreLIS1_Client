@@ -44,8 +44,6 @@ namespace WSC1
                 imOwnerManagerToolStripMenuItem_Click(sender,e);
             else
                 imTravelerToolStripMenuItem_Click(sender, e);
-                imTravelerToolStripMenuItem.Visible = !new Session1Entities().Users.Any(x => x.ID == Global.UserId && x.UserType.Name == "employee");
-                imOwnerManagerToolStripMenuItem.Visible = new Session1Entities().Users.Any(x => x.ID == Global.UserId && x.UserType.Name == "employee");
         }
     }
 }

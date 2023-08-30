@@ -41,7 +41,7 @@ namespace WSC1
         {
             ShowDataGridView.Rows.Clear();
             Session1Entities entities = new Session1Entities();
-            var asd = entities.Items.Select(x => new
+            var asd = entities.Items.Where(x=>x.UserID==Global.UserId).Select(x => new
             {
                 Title = x.Title,
                 Capacity = x.Capacity,

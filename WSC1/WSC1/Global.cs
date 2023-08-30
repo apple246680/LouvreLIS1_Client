@@ -25,7 +25,7 @@ namespace System
             Main.ins.Controls.Add(loginForm);
             loginForm.Show();
         }
-        public static long UserId { get; set; }
+        public static long? UserId { get; set; }
         public static void ShowManagementForm()
         {
             Main.ins.Text = "Seoul Stay - Management";

@@ -22,5 +22,19 @@ namespace WSC1.Properties {
                 return defaultInstance;
             }
         }
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string KeppLogin
+        {
+            get
+            {
+                return ((string)(this["KeppLogin"]));
+            }
+            set
+            {
+                this["KeppLogin"] = value;
+            }
+        }
     }
 }

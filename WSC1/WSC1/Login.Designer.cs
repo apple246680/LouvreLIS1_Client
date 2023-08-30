@@ -196,6 +196,7 @@
             this.Controls.Add(this.LoginGroupBox);
             this.Name = "LoginForm";
             this.Size = new System.Drawing.Size(800, 500);
+            this.Load += new System.EventHandler(this.LoginForm_Load);
             this.LoginGroupBox.ResumeLayout(false);
             this.LoginGroupBox.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.LogoPict)).EndInit();
