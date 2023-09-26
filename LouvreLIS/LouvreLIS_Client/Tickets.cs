@@ -22,7 +22,11 @@ namespace LouvreLIS_Client
         {
             TicketDataGridView.Rows.Clear();
             foreach (var item in asd.Visitor.TicketDatas)
-                TicketDataGridView.Rows.Add(item.VisitDateTime.ToString("MM/dd/yyyy"), item.VisitDateTime.ToString("HH:mm"),item.TicketStatus.ToString()=="0"? "N/A" : item.TicketNumber, item.TicketStatus.ToString() == "0" ? "N/A" : item.PurchaseDate.Value.ToString("MM/dd/yyyy HH:mm"), item.TicketStatus.ToString() == "0" ? "Unpaid": item.TicketStatus.ToString() == "1" ? "Normal" : "Suspended", item.TicketStatus.ToString() == "0" ? "N/A" : "🍳");   
+                TicketDataGridView.Rows.Add(item.VisitDateTime.ToString("MM/dd/yyyy"),
+                    item.VisitDateTime.ToString("HH:mm"), item.TicketStatus.ToString() == "0" ? "N/A" : item.TicketNumber, 
+                    item.TicketStatus.ToString() == "0" ? "N/A" : item.PurchaseDate.Value.ToString("MM/dd/yyyy HH:mm"),
+                    item.TicketStatus.ToString() == "0" ? "Unpaid" : item.TicketStatus.ToString() == "1" ? "Normal" : "Suspended",
+                    item.TicketStatus.ToString() == "0" ? "N/A" : "🍳");
         }
         private void TicketDataGridView_CellClick(object sender, DataGridViewCellEventArgs e)
         {
