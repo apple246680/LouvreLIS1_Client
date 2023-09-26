@@ -32,7 +32,7 @@ namespace Sesosin3
         private void SearchBtn_Click(object sender, EventArgs e)
         {
             using (Session3Entities entities = new Session3Entities())
-            {
+           {
                 var items = entities.Items.ToList();
                 if (!String.IsNullOrEmpty(SearchTextBox.Text))
                     items = items.Where(t => t.Areas.Name == SearchTextBox.Text
